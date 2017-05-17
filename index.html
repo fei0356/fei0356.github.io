@@ -500,10 +500,13 @@
       
         
           
-          var Data = {set: function(n, v) {Data.data[n] = v;
-return true;},
+          var Data = {    set: function(n, v) {        Data.data[n] = v;        return true;    },
 data: {},
-get: function(n) {return Data.data[n];}};
+
+get: function(n) {
+    return Data.data[n];
+}
+};
 
           
 
