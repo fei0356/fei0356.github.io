@@ -92,7 +92,7 @@ dpr = window.devicePixelRati">
 <meta property="og:description" content="Demo
 jsvar dpr, rem, scale;var docEl = document.documentElement;var fontEl = document.createElement(‘style’);var metaEl = document.querySelector(‘meta[name=”viewport”]’); 
 dpr = window.devicePixelRati">
-<meta property="og:updated_time" content="2017-01-02T07:46:57.000Z">
+<meta property="og:updated_time" content="2017-05-16T02:53:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动端适配">
 <meta name="twitter:description" content="Demo
@@ -502,7 +502,7 @@ dpr = window.devicePixelRati">
       
         <p><a href="http://htmlpreview.github.io/?https://github.com/fei0356/htmlDemo/blob/master/mobile_adaptation.html" target="_blank" rel="external">Demo</a></p>
 <h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><p>var dpr, rem, scale;<br>var docEl = document.documentElement;<br>var fontEl = document.createElement(‘style’);<br>var metaEl = document.querySelector(‘meta[name=”viewport”]’); </p>
-<p>dpr = window.devicePixelRatio || 1;<br>rem = window.innerWidth/ 10;<br>scale = 1 / dpr;<br>// 设置viewport，进行缩放，达到高清效果<br>metaEl.setAttribute(‘content’, ‘width=’ + window.innerWidth + ‘,initial-scale=’ +scale + ‘,maximum-scale=’ + scale + ‘,minimum-scale=’ + scale + ‘,user-scalable=no’);<br>// 设置data-dpr属性，留作的css hack之用<br>docEl.setAttribute(‘data-dpr’, dpr);<br>// 动态写入样式<br>docEl.firstElementChild.appendChild(fontEl);<br>fontEl.innerHTML = ‘html{font-size:’ + rem + ‘px!important;}’;<br>// 给js调用的，某一dpr下rem和px之间的转换函数<br>window.rem2px = function(v) {<br>    v = parseFloat(v);<br>    return v * rem;<br>};<br>window.px2rem = function(v) {<br>    v = parseFloat(v);<br>    return v / rem;<br>};<br>window.dpr = dpr;<br>window.rem = rem; </p>
+<p>dpr = window.devicePixelRatio || 1;<br>rem = window.innerWidth/ 10;<br>scale = 1 / dpr;<br>// 设置viewport，进行缩放，达到高清效果<br>metaEl.setAttribute(‘content’, ‘width=’ + window.innerWidth + ‘,initial-scale=’ +scale + ‘,maximum-scale=’ + scale + ‘,minimum-scale=’ + scale + ‘,user-scalable=no’);<br>// 设置data-dpr属性，留作的css hack之用<br>docEl.setAttribute(‘data-dpr’, dpr);<br>// 动态写入样式<br>docEl.firstElementChild.appendChild(fontEl);<br>fontEl.innerHTML = ‘html{font-size:’ + rem + ‘px!important;}’;<br>// 给js调用的，某一dpr下rem和px之间的转换函数<br>window.rem2px = function(v) {<br>    v = parseFloat(v);<br>    return v * rem;<br>};<br>window.px2rem = function(v) {<br>    v = parseFloat(v);<br>    return v / rem;<br>};<br>window.dpr = dpr;<br>window.rem = rem;  </p>
 <h2 id="scss"><a href="#scss" class="headerlink" title="scss"></a>scss</h2><p>@mixin px2rem($name, $px){ </p>
 <pre><code>#{$name}: $px / 75 * 1rem; 
 </code></pre><p>}  </p>
@@ -573,6 +573,10 @@ dpr = window.devicePixelRati">
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/04/cssDemo/" rel="prev" title="一些不常用的css">
+                一些不常用的css <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -682,7 +686,7 @@ dpr = window.devicePixelRati">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -699,7 +703,7 @@ dpr = window.devicePixelRati">
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
