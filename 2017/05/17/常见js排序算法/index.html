@@ -82,16 +82,37 @@
 
 
 
-<meta name="description" content="左手持剑、右手有光、我的女人在等我">
-<meta property="og:type" content="website">
-<meta property="og:title" content="笔记分类">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="console.log(&amp;quot;冒泡&amp;quot;);
+var arr = [1,24,4,2,67,2124,43,2]
+var bubbleSort = function(arr){
+    if(arr.length &amp;lt;= 1){
+        return arr
+    }
+    var temp;
+    for(var i = 0; i &amp;lt; arr.length-1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常见js排序算法">
+<meta property="og:url" content="http://yoursite.com/2017/05/17/常见js排序算法/index.html">
 <meta property="og:site_name" content="阿飞笔记">
-<meta property="og:description" content="左手持剑、右手有光、我的女人在等我">
-<meta property="og:updated_time" content="2016-04-30T06:59:36.000Z">
+<meta property="og:description" content="console.log(&amp;quot;冒泡&amp;quot;);
+var arr = [1,24,4,2,67,2124,43,2]
+var bubbleSort = function(arr){
+    if(arr.length &amp;lt;= 1){
+        return arr
+    }
+    var temp;
+    for(var i = 0; i &amp;lt; arr.length-1">
+<meta property="og:updated_time" content="2017-05-17T07:27:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="笔记分类">
-<meta name="twitter:description" content="左手持剑、右手有光、我的女人在等我">
+<meta name="twitter:title" content="常见js排序算法">
+<meta name="twitter:description" content="console.log(&amp;quot;冒泡&amp;quot;);
+var arr = [1,24,4,2,67,2124,43,2]
+var bubbleSort = function(arr){
+    if(arr.length &amp;lt;= 1){
+        return arr
+    }
+    var temp;
+    for(var i = 0; i &amp;lt; arr.length-1">
 
 
 
@@ -109,13 +130,7 @@
   };
 </script>
 
-  <title>
-  
-
-  
-    分类 | 阿飞笔记
-  
-</title>
+  <title> 常见js排序算法 | 阿飞笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -146,7 +161,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -426,16 +441,258 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
     
-      <div class="category-all-page">
-        <div class="category-all-title">
-            目前共计 1 个分类
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                常见js排序算法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-05-17T15:18:50+08:00" content="2017-05-17">
+              2017-05-17
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/05/17/常见js排序算法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/17/常见js排序算法/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/05/17/常见js排序算法/" class="leancloud_visitors" data-flag-title="常见js排序算法">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
         </div>
-        <div class="category-all">
-          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/github/">github</a><span class="category-list-count">1</span></li></ul>
-        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <pre><code>console.log(&quot;冒泡&quot;);
+var arr = [1,24,4,2,67,2124,43,2]
+var bubbleSort = function(arr){
+    if(arr.length &lt;= 1){
+        return arr
+    }
+    var temp;
+    for(var i = 0; i &lt; arr.length-1 ;i++){
+        for(var j = i+1; j&lt;arr.length; j++){
+            if(arr[i] &gt; arr[j]){
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    return console.log(arr);
+}
+bubbleSort(arr);
+
+console.log(&quot;快速&quot;)
+var quickSort = function(arr){
+    if(arr.length &lt;= 1){
+        return arr
+    };
+    var left = [];
+    var right = [];
+    var pointIndex = Math.floor(arr.length/2);
+    var point = arr.splice(pointIndex,1)[0];
+    for (var i = 0; i &lt; arr.length; i++) {
+        if (arr[i] &lt; point) {
+            left.push(arr[i])
+        }else {
+            right.push(arr[i])
+        }
+    }
+    return quickSort(left).concat([point],quickSort(right));
+
+}
+console.log(quickSort(arr))
+
+console.log(&quot;选择&quot;)
+var selectSort = function(arr){
+    var index, min, temp;
+    for (var i = 0; i &lt; arr.length; i++) {
+        index = i;
+        min = arr[i];
+        for (var j = i + 1; j &lt; arr.length; j++) {
+            if (arr[j] &lt; min){
+                index = j;
+            }
+        }
+        if(index != i){
+            temp = arr[i];
+            arr[i] = arr[index];
+            arr[index] = temp;    
+        }
+    }
+    return arr
+}
+console.log(selectSort([1,24,4,2,67,2124,43,2]));
+
+console.log(&quot;插入排序&quot;);
+var insert = function(arr){
+    var index,insert;
+    for(var i = 0; i&lt;arr.length-1 ;i++){
+        index = i + 1;
+        insert = arr[i+1];
+        for(var j = i; j &gt;= 0 ;j--){
+            if(arr[j] &gt; insert){
+                arr[j+1] = arr[j]
+                index = j;
+            }
+        }
+        arr[index] = insert;
+    }
+    return arr
+}
+console.log(insert([1,24,4,2,67,2124,43,2]))
+</code></pre>
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 70px; height: 70px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/wxpay.png" alt="阿飞 WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
       </div>
     
+    
+  </div>
+</div>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/17/js代码存储数据/" rel="next" title="js代码存储数据">
+                <i class="fa fa-chevron-left"></i> js代码存储数据
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
   </div>
 
 
@@ -444,6 +701,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/05/17/常见js排序算法/"
+           data-title="常见js排序算法" data-url="http://yoursite.com/2017/05/17/常见js排序算法/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -463,8 +728,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -527,6 +801,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -623,6 +908,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
