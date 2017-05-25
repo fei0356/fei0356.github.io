@@ -82,34 +82,40 @@
 
 
 
-<meta name="description" content="遇到的一些关于css布局适配问题：1.盒子，图片等宽度设置首选百分比，次而选择rem，高度可以是固定值
+<meta name="description" content="1.盒子，图片等宽度设置首选百分比，次而选择rem，高度可以是固定值
 
 2.字体可以不用rem，误差太大了，且不能满足任何屏幕下字体大小相同,所以建议标题类用rem，要求字体大小相同的部分还是用px；
 
 3.遇到内容排列显示的布局，建议放弃float，可以直接使用display:inline-block。
 
-4.慎用position属性；absolute会脱离文档">
+4.慎用position属性；absolute会脱离文档流，relative则不会
+
+5.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常见js排序算法">
+<meta property="og:title" content="遇到的一些移动端关于css布局适配问题">
 <meta property="og:url" content="http://yoursite.com/2017/05/17/移动端适配2/index.html">
 <meta property="og:site_name" content="阿飞笔记">
-<meta property="og:description" content="遇到的一些关于css布局适配问题：1.盒子，图片等宽度设置首选百分比，次而选择rem，高度可以是固定值
+<meta property="og:description" content="1.盒子，图片等宽度设置首选百分比，次而选择rem，高度可以是固定值
 
 2.字体可以不用rem，误差太大了，且不能满足任何屏幕下字体大小相同,所以建议标题类用rem，要求字体大小相同的部分还是用px；
 
 3.遇到内容排列显示的布局，建议放弃float，可以直接使用display:inline-block。
 
-4.慎用position属性；absolute会脱离文档">
-<meta property="og:updated_time" content="2017-05-25T02:05:57.000Z">
+4.慎用position属性；absolute会脱离文档流，relative则不会
+
+5.">
+<meta property="og:updated_time" content="2017-05-25T02:09:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="常见js排序算法">
-<meta name="twitter:description" content="遇到的一些关于css布局适配问题：1.盒子，图片等宽度设置首选百分比，次而选择rem，高度可以是固定值
+<meta name="twitter:title" content="遇到的一些移动端关于css布局适配问题">
+<meta name="twitter:description" content="1.盒子，图片等宽度设置首选百分比，次而选择rem，高度可以是固定值
 
 2.字体可以不用rem，误差太大了，且不能满足任何屏幕下字体大小相同,所以建议标题类用rem，要求字体大小相同的部分还是用px；
 
 3.遇到内容排列显示的布局，建议放弃float，可以直接使用display:inline-block。
 
-4.慎用position属性；absolute会脱离文档">
+4.慎用position属性；absolute会脱离文档流，relative则不会
+
+5.">
 
 
 
@@ -127,7 +133,7 @@
   };
 </script>
 
-  <title> 常见js排序算法 | 阿飞笔记 </title>
+  <title> 遇到的一些移动端关于css布局适配问题 | 阿飞笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -457,7 +463,7 @@
             
             
               
-                常见js排序算法
+                遇到的一些移动端关于css布局适配问题
               
             
           </h1>
@@ -491,7 +497,7 @@
 
           
           
-             <span id="/2017/05/17/移动端适配2/" class="leancloud_visitors" data-flag-title="常见js排序算法">
+             <span id="/2017/05/17/移动端适配2/" class="leancloud_visitors" data-flag-title="遇到的一些移动端关于css布局适配问题">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -512,7 +518,7 @@
       
 
       
-        <h3 id="遇到的一些关于css布局适配问题："><a href="#遇到的一些关于css布局适配问题：" class="headerlink" title="遇到的一些关于css布局适配问题："></a>遇到的一些关于css布局适配问题：</h3><pre><code>1.盒子，图片等宽度设置首选百分比，次而选择rem，高度可以是固定值
+        <pre><code>1.盒子，图片等宽度设置首选百分比，次而选择rem，高度可以是固定值
 
 2.字体可以不用rem，误差太大了，且不能满足任何屏幕下字体大小相同,所以建议标题类用rem，要求字体大小相同的部分还是用px；
 
@@ -541,6 +547,23 @@
     ::-webkit-input-placeholder{
         color:#ccc
     }
+
+
+
+var scale = 1 / devicePixelRatio;  
+document.querySelector(&apos;meta[name=&quot;viewport&quot;]&apos;).setAttribute(&apos;content&apos;,&apos;initial-scale=&apos; + scale + &apos;,maximum-scale=&apos; + scale + &apos;, minimum-scale=&apos; + scale + &apos;, user-scalable=no&apos;);
+
+//flexible中定义&lt;html&gt;font-size
+var dpr = window.devicePixelRatio;
+console.log(dpr)
+var docEl = document.getElementsByTagName(&quot;html&quot;)[0];
+var width = docEl.clientWidth;
+console.log(width);
+if (width / dpr &gt; 540) {  
+    width = 540 * dpr;
+}
+var rem = width / 10;
+docEl.style.fontSize = rem + &apos;px&apos;;
 </code></pre>
       
     </div>
@@ -655,7 +678,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/05/17/移动端适配2/"
-           data-title="常见js排序算法" data-url="http://yoursite.com/2017/05/17/移动端适配2/">
+           data-title="遇到的一些移动端关于css布局适配问题" data-url="http://yoursite.com/2017/05/17/移动端适配2/">
       </div>
     
   </div>
@@ -759,7 +782,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的一些关于css布局适配问题："><span class="nav-number">1.</span> <span class="nav-text">遇到的一些关于css布局适配问题：</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
