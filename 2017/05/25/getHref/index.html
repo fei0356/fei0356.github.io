@@ -82,15 +82,16 @@
 
 
 
-<meta name="description" content="左手持剑、右手有光、我的女人在等我">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿飞笔记">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="getHref: function(){    var href = location.href    //        var href = ‘http://www.test.qdd.xyz:8080?id=1‘    var s = href.split(‘?’)[1].split(‘&amp;amp;’);    var d = {};    $.each(s,function(index,ite">
+<meta property="og:type" content="article">
+<meta property="og:title" content="获取url参数">
+<meta property="og:url" content="http://yoursite.com/2017/05/25/getHref/index.html">
 <meta property="og:site_name" content="阿飞笔记">
-<meta property="og:description" content="左手持剑、右手有光、我的女人在等我">
+<meta property="og:description" content="getHref: function(){    var href = location.href    //        var href = ‘http://www.test.qdd.xyz:8080?id=1‘    var s = href.split(‘?’)[1].split(‘&amp;amp;’);    var d = {};    $.each(s,function(index,ite">
+<meta property="og:updated_time" content="2017-05-25T05:33:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿飞笔记">
-<meta name="twitter:description" content="左手持剑、右手有光、我的女人在等我">
+<meta name="twitter:title" content="获取url参数">
+<meta name="twitter:description" content="getHref: function(){    var href = location.href    //        var href = ‘http://www.test.qdd.xyz:8080?id=1‘    var s = href.split(‘?’)[1].split(‘&amp;amp;’);    var d = {};    $.each(s,function(index,ite">
 
 
 
@@ -108,7 +109,7 @@
   };
 </script>
 
-  <title> 阿飞笔记 </title>
+  <title> 获取url参数 | 阿飞笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -139,9 +140,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -418,9 +417,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -440,10 +439,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/05/25/getHref/" itemprop="url">
-                  获取url参数
-                </a>
+                获取url参数
               
             
           </h1>
@@ -498,25 +494,36 @@
       
 
       
-        
-          
-          getHref: function(){    var href = location.href    //        var href = ‘http://www.test.qdd.xyz:8080?id=1‘    var s = href.split(‘?’)[1].split(‘&amp
-          ...
+        <p>getHref: function(){<br>    var href = location.href<br>    //        var href = ‘<a href="http://www.test.qdd.xyz:8080?id=1" target="_blank" rel="external">http://www.test.qdd.xyz:8080?id=1</a>‘<br>    var s = href.split(‘?’)[1].split(‘&amp;’);<br>    var d = {};<br>    $.each(s,function(index,item){<br>        d[item.split(‘=’)[0]] = item.split(‘=’)[1]<br>    })<br>    return d<br>}</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/05/25/getHref/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
       
     </div>
     
     <div>
       
+        
+      
     </div>
 
     <div>
+      
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 70px; height: 70px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/wxpay.png" alt="阿飞 WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
+      </div>
+    
+    
+  </div>
+</div>
+
       
     </div>
 
@@ -524,510 +531,70 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/05/17/移动端适配2/" rel="next" title="遇到的一些移动端关于css布局适配问题">
+                <i class="fa fa-chevron-left"></i> 遇到的一些移动端关于css布局适配问题
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/05/17/移动端适配2/" itemprop="url">
-                  遇到的一些移动端关于css布局适配问题
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-05-17T15:18:50+08:00" content="2017-05-17">
-              2017-05-17
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/05/17/移动端适配2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/17/移动端适配2/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2017/05/17/移动端适配2/" class="leancloud_visitors" data-flag-title="遇到的一些移动端关于css布局适配问题">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          1.盒子，图片等宽度设置首选百分比，次而选择rem，高度可以是固定值
-
-2.字体可以不用rem，误差太大了，且不能满足任何屏幕下字体大小相同,所以建议标题类用rem，要求字体大小相同的部分还是用px；
-
-3.遇到内容排列显示的布局，建议放弃float，可以直接使用display:inline-blo
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/05/17/移动端适配2/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
           </div>
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/05/17/常见js排序算法/" itemprop="url">
-                  常见js排序算法
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-05-17T15:18:50+08:00" content="2017-05-17">
-              2017-05-17
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/05/17/常见js排序算法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/17/常见js排序算法/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2017/05/17/常见js排序算法/" class="leancloud_visitors" data-flag-title="常见js排序算法">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
+    <div class="post-spread">
       
         
-          
-          console.log(&quot;冒泡&quot;);
-var arr = [1,24,4,2,67,2124,43,2]
-var bubbleSort = function(arr){
-    if(arr.length &lt;= 1){
-        return arr
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
     }
-  
-          ...
+  </script>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/05/17/常见js排序算法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
       
     </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/05/17/js代码存储数据/" itemprop="url">
-                  js代码存储数据
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-05-17T15:07:47+08:00" content="2017-05-17">
-              2017-05-17
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/05/17/js代码存储数据/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/17/js代码存储数据/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2017/05/17/js代码存储数据/" class="leancloud_visitors" data-flag-title="js代码存储数据">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          var Data = {
-
-    set: function(n, v) {
-        Data.data[n] = v;
-        return true;
-    },
-
-    data: {},
-
-    get: function(n) {
-        return Da
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/05/17/js代码存储数据/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/02/23/flex/" itemprop="url">
-                  flex布局（常用属性）
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-23T11:43:37+08:00" content="2017-02-23">
-              2017-02-23
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/02/23/flex/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/23/flex/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2017/02/23/flex/" class="leancloud_visitors" data-flag-title="flex布局（常用属性）">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          flex 布局父容器{
-    flex-direction
-    flex-wrap
-    flex-flow
-    justify-content
-    align-items
-    align-content
-}
-子容器{
-    order
-    flex-grow
-    fl
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/02/23/flex/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
@@ -1035,6 +602,14 @@ var bubbleSort = function(arr){
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/05/25/getHref/"
+           data-title="获取url参数" data-url="http://yoursite.com/2017/05/25/getHref/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -1054,8 +629,17 @@ var bubbleSort = function(arr){
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -1118,6 +702,17 @@ var bubbleSort = function(arr){
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -1214,6 +809,10 @@ var bubbleSort = function(arr){
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
