@@ -82,28 +82,22 @@
 
 
 
-<meta name="description" content="sass/scss 和 less的区别一. Sass/Scss、Less是什么?Sass (Syntactically Awesome Stylesheets)是一种动态样式语言，Sass语法属于缩排语法，比css比多出好些功能(如变量、嵌套、运算,混入(Mixin)、继承、颜色处理，函数等)，更容易阅读。
-
-Sass与Scss是什么关系?
-
-Sass的缩排语法，对于写惯css前端的web开发者来">
+<meta name="description" content="理解Object.defineProperty的作用
+javascript  辣手摧js 2016年11月09日发布|   5   收藏  |  304.4k 次浏览对象是由多个名/值对组成的无序的集合。对象中每个属性对应任意类型的值。定义对象可以使用构造函数或字面量的形式：
+var obj = new Object;  //obj = {}obj.name = “张三”;  //添加描述obj.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sass/scss/less/css">
-<meta property="og:url" content="http://yoursite.com/2017/01/05/sass-scss-less-css/index.html">
+<meta property="og:title" content="理解object.defineProperty的作用">
+<meta property="og:url" content="http://yoursite.com/2017/06/19/理解object-defineProperty的作用/index.html">
 <meta property="og:site_name" content="阿飞笔记">
-<meta property="og:description" content="sass/scss 和 less的区别一. Sass/Scss、Less是什么?Sass (Syntactically Awesome Stylesheets)是一种动态样式语言，Sass语法属于缩排语法，比css比多出好些功能(如变量、嵌套、运算,混入(Mixin)、继承、颜色处理，函数等)，更容易阅读。
-
-Sass与Scss是什么关系?
-
-Sass的缩排语法，对于写惯css前端的web开发者来">
-<meta property="og:updated_time" content="2017-05-16T02:53:31.000Z">
+<meta property="og:description" content="理解Object.defineProperty的作用
+javascript  辣手摧js 2016年11月09日发布|   5   收藏  |  304.4k 次浏览对象是由多个名/值对组成的无序的集合。对象中每个属性对应任意类型的值。定义对象可以使用构造函数或字面量的形式：
+var obj = new Object;  //obj = {}obj.name = “张三”;  //添加描述obj.">
+<meta property="og:updated_time" content="2017-06-26T04:44:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sass/scss/less/css">
-<meta name="twitter:description" content="sass/scss 和 less的区别一. Sass/Scss、Less是什么?Sass (Syntactically Awesome Stylesheets)是一种动态样式语言，Sass语法属于缩排语法，比css比多出好些功能(如变量、嵌套、运算,混入(Mixin)、继承、颜色处理，函数等)，更容易阅读。
-
-Sass与Scss是什么关系?
-
-Sass的缩排语法，对于写惯css前端的web开发者来">
+<meta name="twitter:title" content="理解object.defineProperty的作用">
+<meta name="twitter:description" content="理解Object.defineProperty的作用
+javascript  辣手摧js 2016年11月09日发布|   5   收藏  |  304.4k 次浏览对象是由多个名/值对组成的无序的集合。对象中每个属性对应任意类型的值。定义对象可以使用构造函数或字面量的形式：
+var obj = new Object;  //obj = {}obj.name = “张三”;  //添加描述obj.">
 
 
 
@@ -121,7 +115,7 @@ Sass的缩排语法，对于写惯css前端的web开发者来">
   };
 </script>
 
-  <title> sass/scss/less/css | 阿飞笔记 </title>
+  <title> 理解object.defineProperty的作用 | 阿飞笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -451,7 +445,7 @@ Sass的缩排语法，对于写惯css前端的web开发者来">
             
             
               
-                sass/scss/less/css
+                理解object.defineProperty的作用
               
             
           </h1>
@@ -463,8 +457,8 @@ Sass的缩排语法，对于写惯css前端的web开发者来">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-05T18:27:16+08:00" content="2017-01-05">
-              2017-01-05
+            <time itemprop="dateCreated" datetime="2017-06-19T11:59:17+08:00" content="2017-06-19">
+              2017-06-19
             </time>
           </span>
 
@@ -474,8 +468,8 @@ Sass的缩排语法，对于写惯css前端的web开发者来">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/01/05/sass-scss-less-css/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/05/sass-scss-less-css/" itemprop="commentsCount"></span>
+                <a href="/2017/06/19/理解object-defineProperty的作用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/19/理解object-defineProperty的作用/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -485,7 +479,7 @@ Sass的缩排语法，对于写惯css前端的web开发者来">
 
           
           
-             <span id="/2017/01/05/sass-scss-less-css/" class="leancloud_visitors" data-flag-title="sass/scss/less/css">
+             <span id="/2017/06/19/理解object-defineProperty的作用/" class="leancloud_visitors" data-flag-title="理解object.defineProperty的作用">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -506,114 +500,57 @@ Sass的缩排语法，对于写惯css前端的web开发者来">
       
 
       
-        <h2 id="sass-scss-和-less的区别"><a href="#sass-scss-和-less的区别" class="headerlink" title="sass/scss 和 less的区别"></a>sass/scss 和 less的区别</h2><h3 id="一-Sass-Scss、Less是什么"><a href="#一-Sass-Scss、Less是什么" class="headerlink" title="一. Sass/Scss、Less是什么?"></a>一. Sass/Scss、Less是什么?</h3><pre><code>Sass (Syntactically Awesome Stylesheets)是一种动态样式语言，Sass语法属于缩排语法，比css比多出好些功能(如变量、嵌套、运算,混入(Mixin)、继承、颜色处理，函数等)，更容易阅读。
+        <p>理解Object.defineProperty的作用</p>
+<p>javascript  辣手摧js 2016年11月09日发布<br>|   5   收藏  |  30<br>4.4k 次浏览<br>对象是由多个名/值对组成的无序的集合。对象中每个属性对应任意类型的值。定义对象可以使用构造函数或字面量的形式：</p>
+<p>var obj = new Object;  //obj = {}<br>obj.name = “张三”;  //添加描述<br>obj.say = function(){};  //添加行为<br>除了以上添加属性的方式，还可以使用Object.defineProperty定义新属性或修改原有的属性。</p>
+<p>Object.defineProperty()<br>语法：</p>
+<p>Object.defineProperty(obj, prop, descriptor)<br>参数说明：</p>
+<p>obj：必需。目标对象<br>prop：必需。需定义或修改的属性的名字<br>descriptor：必需。目标属性所拥有的特性<br>返回值：</p>
+<p>传入函数的对象。即第一个参数obj<br>针对属性，我们可以给这个属性设置一些特性，比如是否只读不可以写；是否可以被for..in或Object.keys()遍历。</p>
+<p>给对象的属性添加特性描述，目前提供两种形式：数据描述和存取器描述。</p>
+<p>数据描述<br>当修改或定义对象的某个属性的时候，给这个属性添加一些特性：</p>
+<p>var obj = {<br>test:”hello”<br>}<br>//对象已有的属性添加特性描述<br>Object.defineProperty(obj,”test”,{<br>configurable:true | false,<br>enumerable:true | false,<br>value:任意类型的值,<br>writable:true | false<br>});<br>//对象新添加的属性的特性描述<br>Object.defineProperty(obj,”newKey”,{<br>configurable:true | false,<br>enumerable:true | false,<br>value:任意类型的值,<br>writable:true | false<br>});<br>数据描述中的属性都是可选的，来看一下设置每一个属性的作用。</p>
+<p>value</p>
+<p>属性对应的值,可以使任意类型的值，默认为undefined</p>
+<p>var obj = {}<br>//第一种情况：不设置value属性<br>Object.defineProperty(obj,”newKey”,{</p>
+<p>});</p>
+<h2 id="console-log-obj-newKey-undefined"><a href="#console-log-obj-newKey-undefined" class="headerlink" title="console.log( obj.newKey );  //undefined"></a>console.log( obj.newKey );  //undefined</h2><p>//第二种情况：设置value属性<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”<br>});<br>console.log( obj.newKey );  //hello<br>writable</p>
+<p>属性的值是否可以被重写。设置为true可以被重写；设置为false，不能被重写。默认为false。</p>
+<p>var obj = {}<br>//第一种情况：writable设置为false，不能重写。<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:false<br>});<br>//更改newKey的值<br>obj.newKey = “change value”;<br>console.log( obj.newKey );  //hello</p>
+<p>//第二种情况：writable设置为true，可以重写<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:true<br>});<br>//更改newKey的值<br>obj.newKey = “change value”;<br>console.log( obj.newKey );  //change value<br>enumerable</p>
+<p>此属性是否可以被枚举（使用for…in或Object.keys()）。设置为true可以被枚举；设置为false，不能被枚举。默认为false。</p>
+<p>var obj = {}<br>//第一种情况：enumerable设置为false，不能被枚举。<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:false,<br>enumerable:false<br>});</p>
+<p>//枚举对象的属性<br>for( var attr in obj ){<br>console.log( attr );<br>}<br>//第二种情况：enumerable设置为true，可以被枚举。<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:false,<br>enumerable:true<br>});</p>
+<p>//枚举对象的属性<br>for( var attr in obj ){<br>console.log( attr );  //newKey<br>}<br>configurable</p>
+<p>是否可以删除目标属性或是否可以再次修改属性的特性（writable, configurable, enumerable）。设置为true可以被删除或可以重新设置特性；设置为false，不能被可以被删除或不可以重新设置特性。默认为false。</p>
+<p>这个属性起到两个作用：</p>
+<p>目标属性是否可以使用delete删除<br>目标属性是否可以再次设置特性<br>//—————–测试目标属性是否能被删除————————<br>var obj = {}<br>//第一种情况：configurable设置为false，不能被删除。<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:false,<br>enumerable:false,<br>configurable:false<br>});<br>//删除属性<br>delete obj.newKey;<br>console.log( obj.newKey ); //hello</p>
+<p>//第二种情况：configurable设置为true，可以被删除。<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:false,<br>enumerable:false,<br>configurable:true<br>});<br>//删除属性<br>delete obj.newKey;<br>console.log( obj.newKey ); //undefined</p>
+<p>//—————–测试是否可以再次修改特性————————<br>var obj = {}<br>//第一种情况：configurable设置为false，不能再次修改特性。<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:false,<br>enumerable:false,<br>configurable:false<br>});</p>
+<p>//重新修改特性<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:true,<br>enumerable:true,<br>configurable:true<br>});<br>console.log( obj.newKey ); //报错：Uncaught TypeError: Cannot redefine property: newKey</p>
+<p>//第二种情况：configurable设置为true，可以再次修改特性。<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:false,<br>enumerable:false,<br>configurable:true<br>});</p>
+<p>//重新修改特性<br>Object.defineProperty(obj,”newKey”,{<br>value:”hello”,<br>writable:true,<br>enumerable:true,<br>configurable:true<br>});<br>console.log( obj.newKey ); //hello<br>除了可以给新定义的属性设置特性，也可以给已有的属性设置特性</p>
+<p>//定义对象的时候添加的属性，是可删除、可重写、可枚举的。<br>var obj = {<br>test:”hello”<br>}</p>
+<p>//改写值<br>obj.test = ‘change value’;</p>
+<p>console.log( obj.test ); //‘change value’</p>
+<p>Object.defineProperty(obj,”test”,{<br>writable:false<br>})</p>
+<p>//再次改写值<br>obj.test = ‘change value again’;</p>
+<p>console.log( obj.test ); //依然是：’change value’<br>提示：一旦使用Object.defineProperty给对象添加属性，那么如果不设置属性的特性，那么configurable、enumerable、writable这些值都为默认的false</p>
+<p>var obj = {};<br>//定义的新属性后，这个属性的特性中configurable，enumerable，writable都为默认的值false<br>//这就导致了neykey这个是不能重写、不能枚举、不能再次设置特性<br>//<br>Object.defineProperty(obj,’newKey’,{</p>
+<p>});</p>
+<p>//设置值<br>obj.newKey = ‘hello’;<br>console.log(obj.newKey);  //undefined</p>
+<p>//枚举<br>for( var attr in obj ){<br>console.log(attr);<br>}<br>设置的特性总结：</p>
+<p>value: 设置属性的值<br>writable: 值是否可以重写。true | false<br>enumerable: 目标属性是否可以被枚举。true | false<br>configurable: 目标属性是否可以被删除或是否可以再次修改特性 true | false<br>存取器描述<br>当使用存取器描述属性的特性的时候，允许设置以下特性属性：</p>
+<p>var obj = {};<br>Object.defineProperty(obj,”newKey”,{<br>get:function (){} | undefined,<br>set:function (value){} | undefined<br>configurable: true | false<br>enumerable: true | false<br>});<br>注意：当使用了getter或setter方法，不允许使用writable和value这两个属性</p>
+<p>getter/setter</p>
+<p>当设置或获取对象的某个属性的值的时候，可以提供getter/setter方法。</p>
+<p>getter 是一种获得属性值的方法<br>setter是一种设置属性值的方法。<br>在特性中使用get/set属性来定义对应的方法。</p>
+<p>var obj = {};<br>var initValue = ‘hello’;<br>Object.defineProperty(obj,”newKey”,{<br>get:function (){<br>//当获取值的时候触发的函数<br>return initValue;<br>},<br>set:function (value){<br>//当设置值的时候触发的函数,设置的新值通过参数value拿到<br>initValue = value;<br>}<br>});<br>//获取值<br>console.log( obj.newKey );  //hello</p>
+<p>//设置值<br>obj.newKey = ‘change value’;</p>
+<p>console.log( obj.newKey ); //change value<br>注意：get或set不是必须成对出现，任写其一就可以。如果不设置方法，则get和set的默认值为undefined</p>
+<p>configurable和enumerable同上面的用法。</p>
+<p>兼容性<br>在ie8下只能在DOM对象上使用，尝试在原生的对象使用 Object.defineProperty()会报错。</p>
 
-Sass与Scss是什么关系?
-
-Sass的缩排语法，对于写惯css前端的web开发者来说很不直观，也不能将css代码加入到Sass里面，因此sass语法进行了改良，Sass 3就变成了Scss(sassy css)。与原来的语法兼容，只是用{}取代了原来的缩进。
-
-Less也是一种动态样式语言. 对CSS赋予了动态语言的特性，如变量，继承，运算， 函数.  Less 既可以在客户端上运行 (支持IE 6+, Webkit, Firefox)，也可在服务端运行 (借助 Node.js)。
-</code></pre><h3 id="二-Sass-Scss与Less区别"><a href="#二-Sass-Scss与Less区别" class="headerlink" title="二. Sass/Scss与Less区别"></a>二. Sass/Scss与Less区别</h3><pre><code>1.编译环境不一样
-
-Sass的安装需要Ruby环境，是在服务端处理的，而Less是需要引入less.js来处理Less代码输出css到浏览器，也可以在开发环节使用Less，然后编译成css文件，直接放到项目中，也有 Less.app、SimpleLess、CodeKit.app这样的工具，也有在线编译地址。
-
-2.变量符不一样，Less是@，而Scss是$，而且变量的作用域也不一样。
-
-
-
-Less-作用域
-@color: #00c; /* 蓝色 */
-#header {
-      @color: #c00; /* red */
-      border: 1px solid @color; /* 红色边框 */
-}
-
-#footer {
-      border: 1px solid @color; /* 蓝色边框 */
-}
-
-Less-作用域编译后
-#header{border:1px solid #cc0000;}
-#footer{border:1px solid #0000cc;}
-
-scss-作用域
-$color: #00c; /* 蓝色 */
-
-#header {
-
-     $color: #c00; /* red */
-      border: 1px solid $color; /* 红色边框 */
-}
-
-#footer {
-      border: 1px solid $color; /* 蓝色边框 */
-}
-
-Sass-作用域编译后
-
-#header{border:1px solid #c00}
-#footer{border:1px solid #c00}
-
-我们可以看出来，less和scss中的变量会随着作用域的变化而不一样。
-
-
-3.输出设置，Less没有输出设置，Sass提供4中输出选项：nested, compact, compressed 和 expanded。
-
-输出样式的风格可以有四种选择，默认为nested
-
-nested：嵌套缩进的css代码
-expanded：展开的多行css代码
-compact：简洁格式的css代码
-4.Sass支持条件语句，可以使用if{}else{},for{}循环等等。而Less不支持。
-
-
-/* Sample Sass “if” statement */
-
-@if lightness($color) &gt; 30% {
-
-} @else {
-
-}
-
-/* Sample Sass “for” loop */
-
-@for $i from 1 to 10 {
- .border-#{$i} {
-            border: #{$i}px solid blue;
-      }
-}
-
- 5. 引用外部CSS文件
-
-scss引用的外部文件命名必须以_开头, 如下例所示:其中_test1.scss、_test2.scss、_test3.scss    文件分别设置的h1 h2 h3。文件名如果以下划线_开头的话，Sass会认为该文件是一个引用文件，不会将其    编译为css文件.
-
-// 源代码：
-@import &quot;_test1.scss&quot;;
-@import &quot;_test2.scss&quot;;
-@import &quot;_test3.scss&quot;;
-
-// 编译后：
-h1 {
-  font-size: 17px;
-}
-
-h2 {
-  font-size: 17px;
-}
-
-h3 {
-  font-size: 17px;
-}
-
-
-Less引用外部文件和css中的@import没什么差异。
-
-6.Sass和Less的工具库不同
-
-Sass有工具库Compass, 简单说，Sass和Compass的关系有点像Javascript和jQuery的关系,Compass是Sass的工具库。在它的基础上，封装了一系列有用的模块和模板，补充强化了Sass的功能。
-
-Less有UI组件库Bootstrap,Bootstrap是web前端开发中一个比较有名的前端UI组件库，Bootstrap的样式文件部分源码就是采用Less语法编写
-</code></pre>
       
     </div>
     
@@ -652,16 +589,16 @@ Less有UI组件库Bootstrap,Bootstrap是web前端开发中一个比较有名的�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/04/learngit/" rel="next" title="learngit">
-                <i class="fa fa-chevron-left"></i> learngit
+              <a href="/2017/06/05/lame/" rel="next" title="lame压缩音乐文件">
+                <i class="fa fa-chevron-left"></i> lame压缩音乐文件
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/12/1-12/" rel="prev" title="git问题记录">
-                git问题记录 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/30/revel/" rel="prev" title="revel">
+                revel <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -726,8 +663,8 @@ Less有UI组件库Bootstrap,Bootstrap是web前端开发中一个比较有名的�
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/01/05/sass-scss-less-css/"
-           data-title="sass/scss/less/css" data-url="http://yoursite.com/2017/01/05/sass-scss-less-css/">
+      <div class="ds-thread" data-thread-key="2017/06/19/理解object-defineProperty的作用/"
+           data-title="理解object.defineProperty的作用" data-url="http://yoursite.com/2017/06/19/理解object-defineProperty的作用/">
       </div>
     
   </div>
@@ -831,7 +768,7 @@ Less有UI组件库Bootstrap,Bootstrap是web前端开发中一个比较有名的�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#sass-scss-和-less的区别"><span class="nav-number">1.</span> <span class="nav-text">sass/scss 和 less的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-Sass-Scss、Less是什么"><span class="nav-number">1.1.</span> <span class="nav-text">一. Sass/Scss、Less是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-Sass-Scss与Less区别"><span class="nav-number">1.2.</span> <span class="nav-text">二. Sass/Scss与Less区别</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#console-log-obj-newKey-undefined"><span class="nav-number">1.</span> <span class="nav-text">console.log( obj.newKey );  //undefined</span></a></li></ol></div>
             
           </div>
         </section>
